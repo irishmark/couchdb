@@ -10,13 +10,19 @@
 % License for the specific language governing permissions and limitations under
 % the License.
 
-{plugins, [
-    couch_db_epi,
-    chttpd_epi,
-    couch_index_epi,
-    global_changes_epi,
-    hastings_epi,
-    mango_epi,
-    mem3_epi,
-    setup_epi
-]}.
+-module(hastings_app).
+-behaviour(application).
+
+
+-export([
+    start/2,
+    stop/1
+]).
+
+
+start(_Type, []) ->
+    hastings_sup:start_link().
+
+
+stop([]) ->
+    ok.

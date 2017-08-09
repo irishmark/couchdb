@@ -41,6 +41,8 @@ SubDirs = [
     "src/mango",
     "src/mem3",
     "src/rexi",
+    "src/easton",
+    "src/hastings",
     "rel"
 ],
 

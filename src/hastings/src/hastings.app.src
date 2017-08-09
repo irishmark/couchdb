@@ -10,13 +10,22 @@
 % License for the specific language governing permissions and limitations under
 % the License.
 
-{plugins, [
-    couch_db_epi,
-    chttpd_epi,
-    couch_index_epi,
-    global_changes_epi,
-    hastings_epi,
-    mango_epi,
-    mem3_epi,
-    setup_epi
+{application, hastings, [
+    {description, "Geospatial Index Manager"},
+    {vsn, git},
+    {mod, {hastings_app, []}},
+    {registered, [
+        hastings_index_manager,
+        hastings_sup
+    ]},
+    {applications, [
+        kernel,
+        stdlib,
+        couch_epi,
+        couch_log,
+        easton,
+        mem3,
+        ioq,
+        fabric
+    ]}
 ]}.

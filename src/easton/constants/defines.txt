@@ -1,0 +1,94 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+
+
+# Port IO Streams
+STREAM_IN               3
+STREAM_OUT              4
+
+
+# Paths
+DEFAULT_CS_MAP_DIR      "/usr/share/CsMap/dict"
+
+
+# Success Exit
+OK                      0
+
+# Error Exits
+ERROR_BAD_WRITE         1
+ERROR_BAD_READ          2
+ERROR_BAD_ALLOC         3
+ERROR_BAD_ARGS          4
+ERROR_BAD_DIRECTORY     5
+ERROR_BAD_ID_IDX_INIT   6
+ERROR_BAD_GEO_IDX_INIT  7
+ERROR_CORRUPT_GEO_IDX   8
+ERROR_BAD_GEO_IDX_CFG   9
+ERROR_BAD_GEOS_INIT     10
+ERROR_GEOS_EXCEPTION    11
+ERROR_BAD_COMMAND       12
+ERROR_TRAILING_DATA     13
+ERROR_CLOSE_FAIL        14
+ERROR_FLUSH_FAIL        15
+ERROR_BAD_USER_KEY      16
+ERROR_BAD_USER_VAL      17
+ERROR_BAD_PUT_USER_KV   18
+ERROR_BAD_GET_USER_KV   19
+ERROR_BAD_DEL_USER_KV   20
+ERROR_BAD_DOC_ID        21
+ERROR_BAD_NUM_WKBS      22
+ERROR_BAD_WKB           23
+ERROR_BAD_DOC_ID_VAL    24
+ERROR_BAD_DOC_NUM_INC   25
+ERROR_BAD_FILTER        26
+ERROR_BAD_NEAREST       27
+ERROR_BAD_LIMIT         28
+ERROR_BAD_OFFSET        29
+ERROR_BAD_QUERY         30
+
+
+# Index Types
+INDEX_TYPE_RTREE        1
+INDEX_TYPE_TPRTREE      2
+INDEX_TYPE_MVRTREE      3
+
+
+# Commands
+COMMAND_CLOSE               1
+COMMAND_SYNC                2
+COMMAND_GET_INDEX_INFO      3
+COMMAND_PUT_USER_KV         4
+COMMAND_GET_USER_KV         5
+COMMAND_DEL_USER_KV         6
+COMMAND_UPDATE_ENTRIES      7
+COMMAND_UPDATE_TP_ENTRIES   8
+COMMAND_REMOVE_ENTRIES      9
+COMMAND_REMOVE_TP_ENTRIES   10
+COMMAND_SEARCH              11
+COMMAND_SEARCH_TP           12
+COMMAND_INDEX_SIZE          13
+
+
+
+# Filters
+FILTER_NONE                 0
+FILTER_CONTAINS             1
+FILTER_CONTAINS_PROPERLY    2
+FILTER_COVERED_BY           3
+FILTER_COVERS               4
+FILTER_CROSSES              5
+FILTER_DISJOINT             6
+FILTER_INTERSECTS           7
+FILTER_OVERLAPS             8
+FILTER_TOUCHES              9
+FILTER_WITHIN               10
+FILTER_MAX                  10

@@ -10,13 +10,9 @@
 % License for the specific language governing permissions and limitations under
 % the License.
 
-{plugins, [
-    couch_db_epi,
-    chttpd_epi,
-    couch_index_epi,
-    global_changes_epi,
-    hastings_epi,
-    mango_epi,
-    mem3_epi,
-    setup_epi
+{application, easton, [
+    {description, "External port based spatial indexing."},
+    {vsn, git},
+    {registered, []},
+    {applications, [kernel, stdlib]}
 ]}.

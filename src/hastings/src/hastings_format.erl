@@ -10,13 +10,12 @@
 % License for the specific language governing permissions and limitations under
 % the License.
 
-{plugins, [
-    couch_db_epi,
-    chttpd_epi,
-    couch_index_epi,
-    global_changes_epi,
-    hastings_epi,
-    mango_epi,
-    mem3_epi,
-    setup_epi
-]}.
+-module(hastings_format).
+
+-export([behaviour_info/1]).
+
+behaviour_info(callbacks) ->
+    [{hits_to_json,3}];
+
+behaviour_info(_Other) ->
+    undefined.

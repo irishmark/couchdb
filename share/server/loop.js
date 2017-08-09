@@ -108,14 +108,15 @@ var DDoc = (function() {
 
 var Loop = function() {
   var line, cmd, cmdkey, dispatch = {
-    "ddoc"     : DDoc.ddoc,
+    "ddoc"         : DDoc.ddoc,
     // "view"    : Views.handler,
-    "reset"    : State.reset,
-    "add_fun"  : State.addFun,
-    "add_lib"  : State.addLib,
-    "map_doc"  : Views.mapDoc,
-    "reduce"   : Views.reduce,
-    "rereduce" : Views.rereduce
+    "reset"        : State.reset,
+    "add_fun"      : State.addFun,
+    "add_lib"      : State.addLib,
+    "map_doc"      : Views.mapDoc,
+    "reduce"       : Views.reduce,
+    "rereduce"     : Views.rereduce,
+    "st_index_doc" : Spatial.indexDoc
   };
   function handleError(e) {
     var type = e[0];
